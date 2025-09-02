@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bono Casino Online</title>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '758108423640642');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=758108423640642&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+    <script>
+        function trackWhatsappAndOpen(a) {
+            try {
+                var eventId = 'wapp-' + Date.now() + '-' + Math.random().toString(36).slice(2);
+                // Usa evento estándar "Contact" (recomendado por Meta para intención de contacto)
+                fbq('track', 'Contact', { channel: 'whatsapp', location: 'button' }, { eventID: eventId });
+                // Abre en nueva pestaña tras un microdelay para asegurar el envío
+                setTimeout(function () { window.open(a.href, '_blank', 'noopener'); }, 120);
+                return false; // evita la navegación inmediata del <a>
+            } catch (e) {
+                // fallback si fbq no está
+                window.open(a.href, '_blank', 'noopener');
+                return false;
+            }
+        }
+    </script>
+    <style>
+        .subtitulo {
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            font-size: 25px;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            color: #fa91fd;
+            font-weight: 700;
+            text-decoration: none;
+            font-style: normal;
+            font-variant: normal;
+            text-transform: none;
+            text-shadow: 0 0 5px #da59af, 0 0 10px #da59af, 0 0 15px #da59af, 0 0 20px #be157d, 0 0 30px #be157d, 0 0 40px #be157d, 0 0 55px #be157d, 0 0 75px #be157d, 2px 2px 2px #be157d;
+        }
+
+        .parrafo {
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            font-size: 18px;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            color: #FFFFFF;
+            font-weight: 700;
+            text-decoration: none;
+            font-style: normal;
+            font-variant: small-caps;
+            text-transform: none;
+            text-align: center;
+            margin: 10px auto;
+            max-width: 600px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            background: radial-gradient(circle at top left, #ff0057, #2e005f, #000000);
+            background-size: 300% 300%;
+            animation: fondoAnimado 10s ease infinite;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        @keyframes fondoAnimado {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        h1 {
+            font-family: "Arial Black", Gadget, sans-serif;
+            font-size: 40px;
+            letter-spacing: -1px;
+            word-spacing: 1.6px;
+            color: #FFE024;
+            font-weight: 400;
+            text-decoration: none;
+            font-style: normal;
+            font-variant: normal;
+            text-transform: none;
+            text-shadow: 0 0 5px #fad91f, 0 0 10px #fad91f, 0 0 15px #fad91f, 0 0 20px #CE5E00, 0 0 30px #CE5E00, 0 0 40px #CE5E00, 0 0 55px #CE5E00, 0 0 75px #CE5E00, 2px 2px 2px #CE5E00;
+            animation: pulseH1 1.8s ease-in-out infinite;
+        }
+
+        @keyframes pulseH1 {
+            0% {
+                text-shadow: 0 0 5px #fad91f, 0 0 10px #fad91f, 0 0 15px #fad91f, 0 0 20px #CE5E00;
+                transform: scale(1);
+            }
+
+            50% {
+                text-shadow: 0 0 15px #ffd700, 0 0 25px #ffea00, 0 0 35px #ffdd00, 0 0 45px #ffcc00;
+                transform: scale(1.05);
+            }
+
+            100% {
+                text-shadow: 0 0 5px #fad91f, 0 0 10px #fad91f, 0 0 15px #fad91f, 0 0 20px #CE5E00;
+                transform: scale(1);
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Botón WhatsApp animado */
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #25D366;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 14px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 0 15px rgba(37, 211, 102, 0.9);
+            margin: 12px 0;
+            animation: pulse 1.5s infinite;
+            transition: background 0.2s;
+        }
+
+        .btn-whatsapp:hover {
+            background: #20b955;
+        }
+
+        /* Animación de pulso */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 10px rgba(37, 211, 102, 0.6);
+            }
+
+            50% {
+                transform: scale(1.08);
+                box-shadow: 0 0 25px rgba(37, 211, 102, 1);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 10px rgba(37, 211, 102, 0.6);
+            }
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+
+        /* Ícono SVG dentro del botón */
+        .btn-whatsapp svg {
+            width: 22px;
+            height: 22px;
+            fill: white;
+        }
+
+        /* --- columnas laterales (PC/Tablet) --- */
+        .side-columns {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            pointer-events: none;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .column {
+            display: grid;
+            grid-template-rows: repeat(10, 1fr);
+            gap: 12px;
+            margin: 20px;
+            width: 220px;
+            pointer-events: auto;
+            animation: scroll-vertical 14s linear infinite;
+        }
+
+        .column img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+            background: #f5f5f5;
+        }
+
+        .column img:hover {
+            transform: scale(1.07);
+        }
+
+        @keyframes scroll-vertical {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-50%);
+            }
+        }
+
+        /* --- contenido central --- */
+        main {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        /* Carruseles móviles */
+        .carousel {
+            display: none;
+            /* por defecto ocultos */
+            overflow: hidden;
+        }
+
+        .carousel-inner {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Layout móvil */
+        @media (max-width: 768px) {
+
+            /* ocultar columnas fijas */
+            .side-columns {
+                display: none;
+            }
+
+            /* mostrar carouseles móviles */
+            .carousel.mobile-top,
+            .carousel.mobile-bottom {
+                display: block;
+                width: 100%;
+                height: 180px;
+                margin: 15px 0;
+            }
+
+            .carousel-inner {
+                display: flex;
+                flex-direction: row;
+                animation: scroll-x 14s linear infinite;
+            }
+
+            .carousel-inner img {
+                width: 100px;
+                height: 100px;
+                margin: 0 10px;
+                flex-shrink: 0;
+            }
+
+            @keyframes scroll-x {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- columnas laterales -->
+    <div class="side-columns">
+        <!-- izquierda -->
+        <div class="column">
+            <img src="src/rubyplay.webp" alt="Rubyplay" loading="lazy">
+            <img src="src/pragmatic.webp" alt="Pragmatic" loading="lazy">
+            <img src="src/JokersJewels.webp" alt="JokersJewels" loading="lazy">
+            <img src="src/5Lions.webp" alt="5Lions" loading="lazy">
+            <img src="src/bigbassbonanza.webp" alt="bigbassbonanza" loading="lazy">
+            <img src="src/BuffaloKing.webp" alt="BuffaloKing" loading="lazy">
+            <img src="src/mayancache.webp" alt="mayancache" loading="lazy">
+            <img src="src/nileFortune.webp" alt="nileFortune" loading="lazy">
+            <img src="src/apuestasDeportivas.webp" alt="apuestasDeportivas" loading="lazy">
+            <img src="src/GoldParty.webp" alt="GoldParty" loading="lazy">
+            <img src="src/rubyplay.webp" alt="Rubyplay" loading="lazy">
+            <img src="src/pragmatic.webp" alt="Pragmatic" loading="lazy">
+            <img src="src/JokersJewels.webp" alt="JokersJewels" loading="lazy">
+            <img src="src/5Lions.webp" alt="5Lions" loading="lazy">
+            <img src="src/bigbassbonanza.webp" alt="bigbassbonanza" loading="lazy">
+            <img src="src/BuffaloKing.webp" alt="BuffaloKing" loading="lazy">
+            <img src="src/mayancache.webp" alt="mayancache" loading="lazy">
+            <img src="src/nileFortune.webp" alt="nileFortune" loading="lazy">
+            <img src="src/apuestasDeportivas.webp" alt="apuestasDeportivas" loading="lazy">
+            <img src="src/GoldParty.webp" alt="GoldParty" loading="lazy">
+        </div>
+
+        <!-- derecha -->
+        <div class="column">
+            <img src="src/Playson.webp" alt="Playson" loading="lazy">
+            <img src="src/redrake.webp" alt="redrake" loading="lazy">
+            <img src="src/SugarRush.webp" alt="SugarRush" loading="lazy">
+            <img src="src/wildrhino.webp" alt="wildrhino" loading="lazy">
+            <img src="src/Zeus.webp" alt="Zeus" loading="lazy">
+            <img src="src/rushfever.webp" alt="rushfever" loading="lazy">
+            <img src="src/volcanorising.webp" alt="volcanorising" loading="lazy">
+            <img src="src/wanted.webp" alt="wanted" loading="lazy">
+            <img src="src/EuropeanRoulette.webp" alt="EuropeanRoulette" loading="lazy">
+            <img src="src/BlackJack.webp" alt="BlackJack" loading="lazy">
+            <img src="src/Playson.webp" alt="Playson" loading="lazy">
+            <img src="src/redrake.webp" alt="redrake" loading="lazy">
+            <img src="src/SugarRush.webp" alt="SugarRush" loading="lazy">
+            <img src="src/wildrhino.webp" alt="wildrhino" loading="lazy">
+            <img src="src/Zeus.webp" alt="Zeus" loading="lazy">
+            <img src="src/rushfever.webp" alt="rushfever" loading="lazy">
+            <img src="src/volcanorising.webp" alt="volcanorising" loading="lazy">
+            <img src="src/wanted.webp" alt="wanted" loading="lazy">
+            <img src="src/EuropeanRoulette.webp" alt="EuropeanRoulette" loading="lazy">
+            <img src="src/BlackJack.webp" alt="BlackJack" loading="lazy">
+        </div>
+    </div>
+
+    <!-- contenido central -->
+    <!-- Carrusel arriba en móvil -->
+    <div class="carousel mobile-top">
+        <div class="carousel-inner">
+            <img src="src/Playson.webp" alt="Playson" loading="lazy">
+            <img src="src/redrake.webp" alt="redrake" loading="lazy">
+            <img src="src/SugarRush.webp" alt="SugarRush" loading="lazy">
+            <img src="src/wildrhino.webp" alt="wildrhino" loading="lazy">
+            <img src="src/Zeus.webp" alt="Zeus" loading="lazy">
+            <img src="src/rushfever.webp" alt="rushfever" loading="lazy">
+            <img src="src/volcanorising.webp" alt="volcanorising" loading="lazy">
+            <img src="src/wanted.webp" alt="wanted" loading="lazy">
+            <img src="src/EuropeanRoulette.webp" alt="EuropeanRoulette" loading="lazy">
+            <img src="src/BlackJack.webp" alt="BlackJack" loading="lazy">
+            <img src="src/rubyplay.webp" alt="Rubyplay" loading="lazy">
+            <img src="src/pragmatic.webp" alt="Pragmatic" loading="lazy">
+            <img src="src/JokersJewels.webp" alt="JokersJewels" loading="lazy">
+            <img src="src/5Lions.webp" alt="5Lions" loading="lazy">
+            <img src="src/bigbassbonanza.webp" alt="bigbassbonanza" loading="lazy">
+            <img src="src/BuffaloKing.webp" alt="BuffaloKing" loading="lazy">
+            <img src="src/mayancache.webp" alt="mayancache" loading="lazy">
+            <img src="src/nileFortune.webp" alt="nileFortune" loading="lazy">
+            <img src="src/apuestasDeportivas.webp" alt="apuestasDeportivas" loading="lazy">
+            <img src="src/GoldParty.webp" alt="GoldParty" loading="lazy">
+        </div>
+    </div>
+    <main>
+
+        <h1>🎰 ¡La mejor atencion en todas las plataformas! 🎰</h1>
+        <p class="subtitulo">Crea tu usuario en whatsapp ahora!</p>
+
+        <!-- Primer CTA -->
+        <a href="https://wa.me/5491161033742?text=Hola%20quiero%20mi%20usuario" class="btn-whatsapp" rel="noopener"
+            onclick="return trackWhatsappAndOpen(this);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                <path
+                    d="M16 .5C7.5.5.5 7.5.5 16c0 2.8.7 5.4 2 7.8L0 32l8.5-2.2c2.3 1.2 4.9 1.9 7.5 1.9 8.5 0 15.5-7 15.5-15.5S24.5.5 16 .5zm0 28c-2.3 0-4.5-.6-6.5-1.8l-.5-.3-5 1.3 1.4-4.9-.3-.5c-1.2-2-1.8-4.2-1.8-6.5 0-7 5.7-12.5 12.5-12.5s12.5 5.7 12.5 12.5S23 28.5 16 28.5zm7.1-9.3c-.4-.2-2.3-1.1-2.6-1.3-.3-.1-.6-.2-.8.2s-.9 1.3-1.1 1.5-.4.3-.8.1c-.4-.2-1.6-.6-3.1-2-1.1-1-1.8-2.1-2-2.5-.2-.4 0-.6.2-.8.2-.2.4-.4.5-.6.2-.2.3-.4.4-.6.1-.2.1-.4 0-.6-.1-.2-.8-2-1.1-2.8-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.6 1.2 3 1.3 3.2c.2.2 2.3 3.5 5.6 4.9.8.3 1.4.6 1.9.7.8.3 1.5.2 2 .1.6-.1 2.3-.9 2.6-1.7.3-.8.3-1.5.2-1.7-.1-.2-.4-.3-.8-.5z" />
+            </svg>
+            Pedir tu usuario WhatsApp
+        </a>
+        <p class="parrafo">🎰 +6000 SLOTS Y RULETAS EXCLUSIVAS🎰</p>
+        <p class="parrafo">💸 RETIROS AL INSTANTE SIN LIMITE💸</p>
+        <p class="parrafo">🍀 BONOS TODOS LOS DIAS EN TODAS LAS PLATAFORMAS🍀 </p>
+        <p class="parrafo">🃏 SLOTS, JUEGOS EN VIVO, APUESTAS DEPORTIVAS Y MUCHO MÁS🃏</p>
+        <p class="parrafo">📲 ATENCIÓN PERSONALIZADA LAS 24HS📲 </p>
+
+
+
+
+        <!-- Segundo CTA -->
+        <p class="subtexto">Oferta disponible por tiempo limitado ⏳</p>
+        <a href="https://wa.me/5491161033742?text=Hola%20quiero%20mi%20usuario" class="btn-whatsapp" rel="noopener"
+            onclick="return trackWhatsappAndOpen(this);">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                <path
+                    d="M16 .5C7.5.5.5 7.5.5 16c0 2.8.7 5.4 2 7.8L0 32l8.5-2.2c2.3 1.2 4.9 1.9 7.5 1.9 8.5 0 15.5-7 15.5-15.5S24.5.5 16 .5zm0 28c-2.3 0-4.5-.6-6.5-1.8l-.5-.3-5 1.3 1.4-4.9-.3-.5c-1.2-2-1.8-4.2-1.8-6.5 0-7 5.7-12.5 12.5-12.5s12.5 5.7 12.5 12.5S23 28.5 16 28.5zm7.1-9.3c-.4-.2-2.3-1.1-2.6-1.3-.3-.1-.6-.2-.8.2s-.9 1.3-1.1 1.5-.4.3-.8.1c-.4-.2-1.6-.6-3.1-2-1.1-1-1.8-2.1-2-2.5-.2-.4 0-.6.2-.8.2-.2.4-.4.5-.6.2-.2.3-.4.4-.6.1-.2.1-.4 0-.6-.1-.2-.8-2-1.1-2.8-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.6 1.2 3 1.3 3.2c.2.2 2.3 3.5 5.6 4.9.8.3 1.4.6 1.9.7.8.3 1.5.2 2 .1.6-.1 2.3-.9 2.6-1.7.3-.8.3-1.5.2-1.7-.1-.2-.4-.3-.8-.5z" />
+            </svg>
+            Pedir tu usuario WhatsApp
+        </a>
+    </main>
+    <!-- Carrusel abajo en móvil -->
+    <div class="carousel mobile-bottom">
+        <div class="carousel-inner">
+            <!-- mismas imágenes -->
+            <img src="src/Playson.webp" alt="Playson" loading="lazy">
+            <img src="src/redrake.webp" alt="redrake" loading="lazy">
+            <img src="src/SugarRush.webp" alt="SugarRush" loading="lazy">
+            <img src="src/wildrhino.webp" alt="wildrhino" loading="lazy">
+            <img src="src/Zeus.webp" alt="Zeus" loading="lazy">
+            <img src="src/rushfever.webp" alt="rushfever" loading="lazy">
+            <img src="src/volcanorising.webp" alt="volcanorising" loading="lazy">
+            <img src="src/wanted.webp" alt="wanted" loading="lazy">
+            <img src="src/EuropeanRoulette.webp" alt="EuropeanRoulette" loading="lazy">
+            <img src="src/BlackJack.webp" alt="BlackJack" loading="lazy">
+            <img src="src/rubyplay.webp" alt="Rubyplay" loading="lazy">
+            <img src="src/pragmatic.webp" alt="Pragmatic" loading="lazy">
+            <img src="src/JokersJewels.webp" alt="JokersJewels" loading="lazy">
+            <img src="src/5Lions.webp" alt="5Lions" loading="lazy">
+            <img src="src/bigbassbonanza.webp" alt="bigbassbonanza" loading="lazy">
+            <img src="src/BuffaloKing.webp" alt="BuffaloKing" loading="lazy">
+            <img src="src/mayancache.webp" alt="mayancache" loading="lazy">
+            <img src="src/nileFortune.webp" alt="nileFortune" loading="lazy">
+            <img src="src/apuestasDeportivas.webp" alt="apuestasDeportivas" loading="lazy">
+            <img src="src/GoldParty.webp" alt="GoldParty" loading="lazy">
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Casino Online · Plataformas verificadas
+    </footer>
+
+</body>
+
+</html>
